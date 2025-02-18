@@ -1,11 +1,77 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import Tech from "../components/Tech.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <main class="px-5">
+    <section class="text-center">
+      <h1 class="text-[96px] font-extrabold" style="letter-spacing: -0.12em;">
+        <span class="animate-fade">H</span>
+        <span class="animate-fade" style="animation-delay: 1.0s;">o</span>
+        <span class="animate-fade" style="animation-delay: 2.0s;">l</span>
+        <span class="animate-fade" style="animation-delay: 3.0s;">a</span>
+        <span class="animate-fade" style="animation-delay: 4.0s;">!</span>
+      </h1>
+      <h1 class="flex flex-col text-3xl font-bold">
+        <span> Soy Luis Hernandez </span>
+        <span class="subhead">Desarrollador Web</span>
+      </h1>
+      <h2 class="flex flex-col items-center mt-8">
+        <span class="text text-[14px]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </span>
+        <span class="flex space-x-4 items-center mt-5">
+          <p>luishsg1@gmail.com</p>
+          <img class="w-12 h-12" src="/linkedin.png" alt="linkedin" />
+          <img class="w-12 h-12" src="/github.png" alt="github" />
+        </span>
+      </h2>
+    </section>
+    <section class="mt-20">
+      <h2 class="text-3xl font-bold">
+        <span>Tecnologías</span>
+        <div class="w-64 border-2 mt-1"></div>
+      </h2>
+      <h3 class="flex flex-col pt-10">
+        <span class="text-2xl font-bold">Lenguajes</span>
+        <div class="flex flex-wrap justify-center pt-5">
+          <Tech Src="/html.png" Alt="HTML" />
+          <Tech Src="/css.png" Alt="CSS" />
+          <Tech Src="/js.png" Alt="JavaScript" />
+        </div>
+        <span class="text-2xl font-bold pt-10"> Frameworks y Librerías </span>
+        <div class="flex flex-wrap-reverse justify-center pt-5">
+          <Tech Src="/React.png" Alt="React" />
+          <Tech Src="/Astro.png" Alt="Astro" />
+          <Tech Src="/Node.js.png" Alt="NodeJS" />
+          <Tech Src="/TailwindCSS.png" Alt="tailwindCSS" />
+        </div>
+        <span class="text-2xl font-bold pt-10"> Herramientas </span>
+        <div class="flex flex-wrap-reverse justify-center pt-5">
+          <Tech Src="/git.png" Alt="Git" />
+          <Tech Src="/figma.png" Alt="Figma" />
+        </div>
+      </h3>
+    </section>
+
+    <style>
+      @keyframes fadeInOut {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+      }
+
+      .animate-fade {
+        animation: fadeInOut 10s infinite;
+      }
+    </style>
+  </main>
 </Layout>
