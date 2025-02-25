@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Tech from "../components/Tech.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout>
@@ -38,13 +39,13 @@ import Tech from "../components/Tech.astro";
       </h2>
       <h3 class="flex flex-col pt-10">
         <span class="text-2xl font-bold">Lenguajes</span>
-        <div class="flex flex-wrap justify-center pt-5">
+        <div class="flex flex-wrap-reverse justify-center pt-5">
           <Tech Src="/html.png" Alt="HTML" />
           <Tech Src="/css.png" Alt="CSS" />
           <Tech Src="/js.png" Alt="JavaScript" />
         </div>
         <span class="text-2xl font-bold pt-10"> Frameworks y Librerías </span>
-        <div class="flex flex-wrap-reverse justify-center pt-5">
+        <div class="flex flex-wrap justify-center pt-5">
           <Tech Src="/React.png" Alt="React" />
           <Tech Src="/Astro.png" Alt="Astro" />
           <Tech Src="/Node.js.png" Alt="NodeJS" />
@@ -57,7 +58,15 @@ import Tech from "../components/Tech.astro";
         </div>
       </h3>
     </section>
-
+    <section>
+      <h2 class="text-3xl font-bold pt-20">
+        <span>Proyectos</span>
+        <div class="w-64 border-2 mt-1"></div>
+      </h2>
+      <div>
+        <Projects />
+      </div>
+    </section>
     <style>
       @keyframes fadeInOut {
         0%,
