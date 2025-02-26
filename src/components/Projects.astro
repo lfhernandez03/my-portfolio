@@ -5,7 +5,7 @@ import type { CollectionEntry } from "astro:content";
 const projects = await getCollection("projects");
 ---
 
-<section class="pt-20 flex flex-col justify-center items-center">
+<section class="flex flex-col justify-center items-center">
     {projects.map((project: CollectionEntry<'projects'>) => (
       <div class="w-[301px] h-[402px] border rounded-2xl flex flex-col justify-center items-center mb-4">
         <img

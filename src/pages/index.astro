@@ -2,6 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import Tech from "../components/Tech.astro";
 import Projects from "../components/Projects.astro";
+import Inputs from "../components/Inputs.astro";
+import Contact from "../components/Contact.astro";
 ---
 
 <Layout>
@@ -63,9 +65,88 @@ import Projects from "../components/Projects.astro";
         <span>Proyectos</span>
         <div class="w-64 border-2 mt-1"></div>
       </h2>
-      <div>
+      <div class="flex flex-col justify-center items-center pt-12">
         <Projects />
       </div>
+    </section>
+    <section>
+      <h2 class="text-3xl font-bold pt-10">
+        <span>Sobre Mi</span>
+        <div class="w-64 border-2 mt-1"></div>
+      </h2>
+      <p class="text text-[14px] text-center mt-10">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+        <br />
+        <br />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </section>
+    <section>
+      <h2 class="text-3xl font-bold pt-10">
+        <span>Contacto</span>
+        <div class="w-64 border-2 mt-1"></div>
+      </h2>
+      <section>
+        <div class="flex pt-10 w-full justify-center">
+          <div class="flex flex-col space-y-4">
+            <Contact
+              title="Correo Electronico"
+              text="luishsg1@gmail.com"
+              src="/gmail.png"
+            />
+            <Contact
+              title="LinkedIn"
+              text="Luis Hernandez"
+              src="/linkedin.png"
+            />
+            <Contact title="GitHub" text="Luis Hernandez" src="/github.png" />
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3 class="flex items-center justify-center pt-10 pb-4">
+          <span class="text-2xl font-bold"> Formulario de Contacto </span>
+        </h3>
+        <form action="submit">
+          <div class="flex flex-col">
+            <Inputs
+              type="text"
+              name="Nombre Completo"
+              placeholder="Luis Hernandez"
+              required
+            />
+            <Inputs
+              type="email"
+              name="Email"
+              placeholder="example@example.com"
+              required
+            />
+          </div>
+          <Inputs
+            type="text"
+            name="Asunto"
+            placeholder="Oferta Laboral/Practicas"
+            required
+          />
+          <div class="mt-2">
+            <label for="Mensaje" class="text-sm">Mensaje</label>
+            <textarea
+              class="w-full h-20 border-2 rounded-md px-2 text-white mt-1"
+              name="Mensaje"
+              id="Mensaje"
+              placeholder="Escribe tu mensaje aqui"
+            ></textarea>
+          </div>
+          <button class="w-full h-8 border-2 rounded-md px-2 mt-2 bg-white text-black font-bold">
+            Enviar
+          </button>
+        </form>
+      </section>
     </section>
     <style>
       @keyframes fadeInOut {
