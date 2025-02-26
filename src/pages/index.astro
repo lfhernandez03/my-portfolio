@@ -8,10 +8,13 @@ import Header from "../components/Header.astro";
 ---
 
 <Layout>
-  <main class="p-5">
+  <main class="max-w-screen-xl mx-auto p-5 px-8 sm:px-12 md:px-20 lg:px-28">
     <Header />
-    <section class="text-center">
-      <h1 class="text-[96px] font-extrabold" style="letter-spacing: -0.12em;">
+    <section class="w-full h-max flex flex-col items-center text-center">
+      <h1
+        class="text-5xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold"
+        style="letter-spacing: -0.12em;"
+      >
         <span class="animate-fade">H</span>
         <span class="animate-fade" style="animation-delay: 1.0s;">o</span>
         <span class="animate-fade" style="animation-delay: 2.0s;">l</span>
@@ -23,7 +26,7 @@ import Header from "../components/Header.astro";
         <span class="subhead">Desarrollador Web</span>
       </h1>
       <h2 class="flex flex-col items-center mt-8">
-        <span class="text text-[14px]">
+        <span class="text text-[14px] justify-center sm:w-96">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -41,33 +44,42 @@ import Header from "../components/Header.astro";
         <span>Tecnologías</span>
         <div class="w-64 border-2 mt-1"></div>
       </h2>
-      <h3 class="flex flex-col pt-10">
-        <span class="text-2xl font-bold">Lenguajes</span>
-        <div class="flex flex-wrap-reverse justify-center pt-5">
-          <Tech Src="/html.png" Alt="HTML" />
-          <Tech Src="/css.png" Alt="CSS" />
-          <Tech Src="/js.png" Alt="JavaScript" />
+      <div class="grid grid-cols-1 md:grid-cols-2  pt-10">
+        <!-- Lenguajes -->
+        <div class="flex flex-col items-center">
+          <span class="text-2xl font-bold mb-4">Lenguajes</span>
+          <div class="grid grid-cols-2 gap-4 items-center justify-center">
+            <Tech Src="/html.png" Alt="HTML" />
+            <Tech Src="/css.png" Alt="CSS" />
+            <Tech Src="/js.png" Alt="JavaScript" />
+          </div>
         </div>
-        <span class="text-2xl font-bold pt-10"> Frameworks y Librerías </span>
-        <div class="flex flex-wrap justify-center pt-5">
-          <Tech Src="/React.png" Alt="React" />
-          <Tech Src="/Astro.png" Alt="Astro" />
-          <Tech Src="/Node.js.png" Alt="NodeJS" />
-          <Tech Src="/TailwindCSS.png" Alt="tailwindCSS" />
+        <!-- Frameworks y Librerías -->
+        <div class="flex flex-col items-center">
+          <span class="text-2xl font-bold mb-4">Frameworks y Librerías</span>
+          <div class="grid grid-cols-2 gap-4">
+            <Tech Src="/React.png" Alt="React" />
+            <Tech Src="/Astro.png" Alt="Astro" />
+            <Tech Src="/Node.js.png" Alt="NodeJS" />
+            <Tech Src="/TailwindCSS.png" Alt="TailwindCSS" />
+          </div>
         </div>
-        <span class="text-2xl font-bold pt-10"> Herramientas </span>
-        <div class="flex flex-wrap-reverse justify-center pt-5">
-          <Tech Src="/git.png" Alt="Git" />
-          <Tech Src="/figma.png" Alt="Figma" />
+        <!-- Herramientas -->
+        <div class="flex flex-col items-center md:col-span-2">
+          <span class="text-2xl font-bold mb-4">Herramientas</span>
+          <div class="grid grid-cols-2 gap-4">
+            <Tech Src="/git.png" Alt="Git" />
+            <Tech Src="/figma.png" Alt="Figma" />
+          </div>
         </div>
-      </h3>
+      </div>
     </section>
     <section>
       <h2 class="text-3xl font-bold pt-20">
         <span>Proyectos</span>
         <div class="w-64 border-2 mt-1"></div>
       </h2>
-      <div class="flex flex-col justify-center items-center pt-12">
+      <div class="flex flex-col pt-12">
         <Projects />
       </div>
     </section>
@@ -76,7 +88,7 @@ import Header from "../components/Header.astro";
         <span>Sobre Mi</span>
         <div class="w-64 border-2 mt-1"></div>
       </h2>
-      <p class="text text-[14px] text-center mt-10">
+      <p class="text text-[14px] text-center mt-10 w-96 mx-auto">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -93,62 +105,68 @@ import Header from "../components/Header.astro";
         <span>Contacto</span>
         <div class="w-64 border-2 mt-1"></div>
       </h2>
-      <section>
-        <div class="flex pt-10 w-full justify-center">
-          <div class="flex flex-col space-y-4">
-            <Contact
-              title="Correo Electronico"
-              text="luishsg1@gmail.com"
-              src="/gmail.png"
-            />
-            <Contact
-              title="LinkedIn"
-              text="Luis Hernandez"
-              src="/linkedin.png"
-            />
-            <Contact title="GitHub" text="Luis Hernandez" src="/github.png" />
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10 justify-center">
+        <section>
+          <h3 class="flex items-center justify-center pt-10 pb-4">
+            <span class="text-2xl font-bold">Enlaces</span>
+          </h3>
+          <div class="flex pt-10 w-full justify-center">
+            <div class="flex flex-col space-y-4">
+              <Contact
+                title="Correo Electronico"
+                text="luishsg1@gmail.com"
+                src="/gmail.png"
+              />
+              <Contact
+                title="LinkedIn"
+                text="Luis Hernandez"
+                src="/linkedin.png"
+              />
+              <Contact title="GitHub" text="Luis Hernandez" src="/github.png" />
+            </div>
           </div>
-        </div>
-      </section>
-      <section>
-        <h3 class="flex items-center justify-center pt-10 pb-4">
-          <span class="text-2xl font-bold"> Formulario de Contacto </span>
-        </h3>
-        <form action="submit">
-          <div class="flex flex-col">
+        </section>
+        <section>
+          <h3 class="flex items-center justify-center pt-10 pb-4">
+            <span class="text-2xl font-bold"> Formulario de Contacto </span>
+          </h3>
+          <form action="submit">
+            <div class="flex flex-col">
+              <Inputs
+                type="text"
+                name="Nombre Completo"
+                placeholder="Luis Hernandez"
+                required
+              />
+              <Inputs
+                type="email"
+                name="Email"
+                placeholder="example@example.com"
+                required
+              />
+            </div>
             <Inputs
               type="text"
-              name="Nombre Completo"
-              placeholder="Luis Hernandez"
+              name="Asunto"
+              placeholder="Oferta Laboral/Practicas"
               required
             />
-            <Inputs
-              type="email"
-              name="Email"
-              placeholder="example@example.com"
-              required
-            />
-          </div>
-          <Inputs
-            type="text"
-            name="Asunto"
-            placeholder="Oferta Laboral/Practicas"
-            required
-          />
-          <div class="mt-2">
-            <label for="Mensaje" class="text-sm">Mensaje</label>
-            <textarea
-              class="w-full h-20 border-2 rounded-md px-2 text-white mt-1"
-              name="Mensaje"
-              id="Mensaje"
-              placeholder="Escribe tu mensaje aqui"
-            ></textarea>
-          </div>
-          <button class="w-full h-8 border-2 rounded-md px-2 mt-2 bg-white text-black font-bold">
-            Enviar
-          </button>
-        </form>
-      </section>
+            <div class="mt-2">
+              <label for="Mensaje" class="text-sm">Mensaje</label>
+              <textarea
+                class="w-full h-20 border-2 rounded-md px-2 text-white mt-1"
+                name="Mensaje"
+                id="Mensaje"
+                placeholder="Escribe tu mensaje aqui"></textarea>
+            </div>
+            <button
+              class="w-full h-8 border-2 rounded-md px-2 mt-2 bg-white text-black font-bold"
+            >
+              Enviar
+            </button>
+          </form>
+        </section>
+      </div>
     </section>
     <style>
       @keyframes fadeInOut {
