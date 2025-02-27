@@ -3,7 +3,7 @@ import "../styles/global.css";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -14,10 +14,6 @@ import "../styles/global.css";
   </head>
   <body>
     <div class="relative w-full h-full min-h-screen">
-      <div
-        class="absolute top-0 z-[-2] w-full h-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
-      >
-      </div>
       <slot />
     </div>
   </body>
@@ -26,16 +22,16 @@ import "../styles/global.css";
 <style is:global>
   html {
     font-family: "Coolvetica", sans-serif;
+    background: var(--background-color);
   }
-  :root {
-    color-scheme: light dark;
-  }
+  
   body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    transition: background 0.3s ease-in-out;
   }
   .subhead {
     font-family: "kepler-std-subhead", serif;
@@ -47,5 +43,29 @@ import "../styles/global.css";
     font-family: "neue-haas-grotesk-text", sans-serif;
     font-weight: 400;
     font-style: normal;
+  }
+
+  /* 🎨 Asegura que los cambios de tema se reflejen */
+  html[data-theme="light"] {
+    --background-color: #ffffff;
+    --background: radial-gradient(
+      ellipse 80% 80% at 50% -20%,
+      rgba(120, 119, 198, 0.3),
+      rgba(255, 255, 255, 0)
+    );
+    color:black;
+    --tech-bg-color: rgba(0, 0, 0, 0.15); /* Fondo negro translúcido para el tema claro */
+
+  }
+  html[data-theme="dark"] {
+    --background-color: #1a1a1a;
+    --background: radial-gradient(
+      ellipse 80% 80% at 50% -20%,
+      rgba(120, 119, 198, 0.3),
+      rgba(0, 0, 0, 0)
+    );
+    color: #ffffff;
+    
+    --tech-bg-color: rgba(255, 255, 255, 0.15); /* Fondo blanco translúcido para el tema oscuro */
   }
 </style>

@@ -10,7 +10,7 @@ import Header from "../components/Header.astro";
 <Layout>
   <main class="max-w-screen-xl mx-auto p-5 px-8 sm:px-12 md:px-20 lg:px-28">
     <Header />
-    <section class="w-full h-max flex flex-col items-center text-center">
+    <section class="first-sec mb-10 pb-10">
       <h1
         class="text-5xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold"
         style="letter-spacing: -0.12em;"
@@ -39,7 +39,7 @@ import Header from "../components/Header.astro";
         </span>
       </h2>
     </section>
-    <section class="mt-20">
+    <section class="">
       <h2 class="text-3xl font-bold">
         <span>Tecnologías</span>
         <div class="w-64 border-2 mt-1"></div>
@@ -88,7 +88,7 @@ import Header from "../components/Header.astro";
         <span>Sobre Mi</span>
         <div class="w-64 border-2 mt-1"></div>
       </h2>
-      <p class="text text-[14px] text-center mt-10 w-96 mx-auto">
+      <p class="text text-[14px] text-center mt-10 sm:w-96 mx-auto">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -154,7 +154,7 @@ import Header from "../components/Header.astro";
             <div class="mt-2">
               <label for="Mensaje" class="text-sm">Mensaje</label>
               <textarea
-                class="w-full h-20 border-2 rounded-md px-2 text-white mt-1"
+                class="w-full h-20 border-2 rounded-md px-2  mt-1"
                 name="Mensaje"
                 id="Mensaje"
                 placeholder="Escribe tu mensaje aqui"></textarea>
@@ -181,6 +181,15 @@ import Header from "../components/Header.astro";
 
       .animate-fade {
         animation: fadeInOut 10s infinite;
+      }
+
+      .first-sec {
+        height: 100vh; /* Ocupa todo el viewport */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
       }
     </style>
   </main>
