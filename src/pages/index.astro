@@ -5,6 +5,13 @@ import Projects from "../components/Projects.astro";
 import Inputs from "../components/Inputs.astro";
 import Contact from "../components/Contact.astro";
 import Header from "../components/Header.astro";
+import Form from "../components/ReactComponents/Form";
+
+const emailJsConfig = {
+  serviceId: import.meta.env.EMAILJS_SERVICE_ID,
+  templateId: import.meta.env.EMAILJS_TEMPLATE_ID,
+  userId: import.meta.env.EMAILJS_USER_ID,
+};
 ---
 
 <Layout>
@@ -130,41 +137,7 @@ import Header from "../components/Header.astro";
           <h3 class="flex items-center justify-center pt-10 pb-4">
             <span class="text-2xl font-bold"> Formulario de Contacto </span>
           </h3>
-          <form action="submit">
-            <div class="flex flex-col">
-              <Inputs
-                type="text"
-                name="Nombre Completo"
-                placeholder="Luis Hernandez"
-                required
-              />
-              <Inputs
-                type="email"
-                name="Email"
-                placeholder="example@example.com"
-                required
-              />
-            </div>
-            <Inputs
-              type="text"
-              name="Asunto"
-              placeholder="Oferta Laboral/Practicas"
-              required
-            />
-            <div class="mt-2">
-              <label for="Mensaje" class="text-sm">Mensaje</label>
-              <textarea
-                class="w-full h-20 border-2 rounded-md px-2  mt-1"
-                name="Mensaje"
-                id="Mensaje"
-                placeholder="Escribe tu mensaje aqui"></textarea>
-            </div>
-            <button
-              class="w-full h-8 border-2 rounded-md px-2 mt-2 bg-white text-black font-bold"
-            >
-              Enviar
-            </button>
-          </form>
+          <Form client:load {...emailJsConfig} />
         </section>
       </div>
     </section>

@@ -1,5 +1,5 @@
 ---
-const { type, name, placeholder, value, required, disabled, class:className } = Astro.props;
+const { type, name, placeholder, value, required, disabled, class:className, onChange} = Astro.props;
 ---
 
 <div class="mt-2">
@@ -12,5 +12,6 @@ const { type, name, placeholder, value, required, disabled, class:className } = 
     value={value}
     required={required}
     disabled={disabled}
+    onchange={onChange}
   />
 </div>
