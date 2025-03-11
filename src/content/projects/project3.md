@@ -1,12 +1,14 @@
 ---
-title: "Proyecto 1"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+title: "Juego Arimaa con IA"
+description: "Implementamos el juego Arimaa donde un jugador humano compite contra una Inteligencia
+ Artificial (IA) basada en el algoritmo Minimax con poda alfa-beta para optimizar las decisiones."
 tags: ["Python", "PyGame"]
-demolink: "https://demo-link.com"
-codelink: "https://code-link.com"
-image: "/TailwindCSS.png"
+codelink: "https://github.com/lfhernandez03/ProyectoIA2.git"
+image: "/Python.png"
 ---
 
-## Descripción detallada del Proyecto 1
-
-Este es el contenido detallado del Proyecto 1. Puedes agregar más información aquí.
+Implementamos el juego Arimaa donde un jugador humano compite contra una Inteligencia
+Artificial (IA) basada en el algoritmo Minimax con poda alfa-beta para optimizar las decisiones.
+Se diseñó el sistema siguiendo principios de programación modular, integrando reglas avanzadas
+del juego y lógica heurística para evaluar movimientos estratégicos. Este proyecto destacó por su
+complejidad en la implementación de estrategias y su enfoque en la interacción jugador-IA.

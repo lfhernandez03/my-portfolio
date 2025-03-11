@@ -1,15 +1,24 @@
 ---
-import Button from "./Button.astro";
 import ThemeToggle from "./ReactComponents/ThemeToggle";
 ---
 
-<header class="flex justify-between items-center">
+<header class="header flex justify-between items-center select-none sticky top-0 z-50">
   <h1 class="font-bold text-md flex flex-col">
     LuFerHer Dev
     <span class="border-2 w-15 rounded-full"></span>
   </h1>
-  <nav>
-    <Button label="Contactame" />
+  <nav class="flex items-center space-x-4">
+    <div class="flex-col flex">
+      <a href="#contact" class="">Contactame</a>
+      <span class="border-2 w-full rounded-full"></span>
+    </div>
     <ThemeToggle client:load />
   </nav>
 </header>
+<style>
+  .header{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    backdrop-filter: blur(10px);
+  }
+</style>

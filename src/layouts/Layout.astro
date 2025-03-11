@@ -23,6 +23,7 @@ import "../styles/global.css";
   html {
     font-family: "Coolvetica", sans-serif;
     background: var(--background-color);
+    scroll-behavior: smooth;
   }
   
   body {
@@ -47,13 +48,14 @@ import "../styles/global.css";
 
   /* 🎨 Asegura que los cambios de tema se reflejen */
   html[data-theme="light"] {
-    --background-color: #ffffff;
+    --background-color: #f7f7f7f7;
     --background: radial-gradient(
       ellipse 80% 80% at 50% -20%,
       rgba(120, 119, 198, 0.3),
       rgba(255, 255, 255, 0)
     );
     color:black;
+
     --tech-bg-color: rgba(0, 0, 0, 0.15); /* Fondo negro translúcido para el tema claro */
 
   }

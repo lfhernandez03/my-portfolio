@@ -1,18 +1,24 @@
 ---
-const { Src, Alt } = Astro.props;
+const { Src, Alt, Name } = Astro.props;
 ---
 
 <div class="">
   <div class="tech-item">
-    <div class="w-28 h-28 rounded-full bg flex items-center justify-center">
+    <div
+      id={Name}
+      class="w-28 h-28 rounded-full bg flex items-center justify-center"
+    >
       <img class="w-16 object-cover" src={Src} alt={Alt} />
     </div>
+    <label for={Name} class="flex justify-center items-center mt-2">{Name}</label>
   </div>
 </div>
 
 <style>
   .bg {
-    background-color: var(--tech-bg-color); /* Utiliza una variable CSS para el fondo */
+    background-color: var(
+      --tech-bg-color
+    ); /* Utiliza una variable CSS para el fondo */
   }
   .tech-item {
     margin: 0.5rem;

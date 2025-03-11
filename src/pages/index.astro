@@ -2,7 +2,6 @@
 import Layout from "../layouts/Layout.astro";
 import Tech from "../components/Tech.astro";
 import Projects from "../components/Projects.astro";
-import Inputs from "../components/Inputs.astro";
 import Contact from "../components/Contact.astro";
 import Header from "../components/Header.astro";
 import Form from "../components/ReactComponents/Form";
@@ -17,7 +16,10 @@ const emailJsConfig = {
 <Layout>
   <main class="max-w-screen-xl mx-auto p-5 px-8 sm:px-12 md:px-20 lg:px-28">
     <Header />
-    <section class="first-sec mb-10 pb-10">
+    <section
+    id="inicio"
+      class="first-sec mb-10 pb-10 section-transition section-transition-active"
+    >
       <h1
         class="text-5xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold"
         style="letter-spacing: -0.12em;"
@@ -41,47 +43,63 @@ const emailJsConfig = {
         </span>
         <span class="flex space-x-4 items-center mt-5">
           <p>luishsg1@gmail.com</p>
-          <img class="w-12 h-12" src="/linkedin.png" alt="linkedin" />
-          <img class="w-12 h-12" src="/github.png" alt="github" />
+          <a
+            href="https://www.linkedin.com/in/lfhernandezsolis/"
+            target="_blank"
+          >
+            <img
+              class="w-12 h-12"
+              src="/linkedin.png"
+              alt="imagen con link hacia perfil de linkedin"
+            />
+          </a>
+          <a href="https://github.com/lfhernandez03"
+            ><img
+              class="w-12 h-12"
+              src="/github.png"
+              alt="imagen con link hacia perfil de github"
+            /></a
+          >
         </span>
       </h2>
     </section>
-    <section class="">
+    <section class="section-transition">
       <h2 class="text-3xl font-bold">
         <span>Tecnologías</span>
         <div class="w-64 border-2 mt-1"></div>
       </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2  pt-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 pt-10">
         <!-- Lenguajes -->
         <div class="flex flex-col items-center">
           <span class="text-2xl font-bold mb-4">Lenguajes</span>
           <div class="grid grid-cols-2 gap-4 items-center justify-center">
-            <Tech Src="/html.png" Alt="HTML" />
-            <Tech Src="/css.png" Alt="CSS" />
-            <Tech Src="/js.png" Alt="JavaScript" />
+            <Tech Src="/html.png" Alt="HTML" Name="HTML5" />
+            <Tech Src="/css.png" Alt="CSS" Name="CSS3" />
+            <Tech Src="/js.png" Alt="JavaScript" Name="JavaScript" />
+            <Tech Src="/Python.png" Alt="Python" Name="Python" />
           </div>
         </div>
         <!-- Frameworks y Librerías -->
         <div class="flex flex-col items-center">
           <span class="text-2xl font-bold mb-4">Frameworks y Librerías</span>
           <div class="grid grid-cols-2 gap-4">
-            <Tech Src="/React.png" Alt="React" />
-            <Tech Src="/Astro.png" Alt="Astro" />
-            <Tech Src="/Node.js.png" Alt="NodeJS" />
-            <Tech Src="/TailwindCSS.png" Alt="TailwindCSS" />
+            <Tech Src="/React.png" Alt="React" Name="React" />
+            <Tech Src="/Astro.png" Alt="Astro" Name="Astro" />
+            <Tech Src="/Node.js.png" Alt="NodeJS" Name="NodeJS" />
+            <Tech Src="/TailwindCSS.png" Alt="TailwindCSS" Name="TailwindCSS" />
           </div>
         </div>
         <!-- Herramientas -->
         <div class="flex flex-col items-center md:col-span-2">
           <span class="text-2xl font-bold mb-4">Herramientas</span>
           <div class="grid grid-cols-2 gap-4">
-            <Tech Src="/git.png" Alt="Git" />
-            <Tech Src="/figma.png" Alt="Figma" />
+            <Tech Src="/git.png" Alt="Git" Name="Git" />
+            <Tech Src="/figma.png" Alt="Figma" Name="Figma" />
           </div>
         </div>
       </div>
     </section>
-    <section>
+    <section class="section-transition">
       <h2 class="text-3xl font-bold pt-20">
         <span>Proyectos</span>
         <div class="w-64 border-2 mt-1"></div>
@@ -90,7 +108,7 @@ const emailJsConfig = {
         <Projects />
       </div>
     </section>
-    <section>
+    <section class="section-transition">
       <h2 class="text-3xl font-bold pt-10">
         <span>Sobre Mi</span>
         <div class="w-64 border-2 mt-1"></div>
@@ -107,7 +125,7 @@ const emailJsConfig = {
         nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       </p>
     </section>
-    <section>
+    <section id="contact" class="section-transition">
       <h2 class="text-3xl font-bold pt-10">
         <span>Contacto</span>
         <div class="w-64 border-2 mt-1"></div>
@@ -123,13 +141,20 @@ const emailJsConfig = {
                 title="Correo Electronico"
                 text="luishsg1@gmail.com"
                 src="/gmail.png"
+                href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBmlkCnkFgLpHXqpLSFBWDCLJzlmdgzMbZLFtVqxhzMDJCdDwZnDtQPJHmGstqJFxbZJJvX"
               />
               <Contact
                 title="LinkedIn"
                 text="Luis Hernandez"
                 src="/linkedin.png"
+                href="https://www.linkedin.com/in/lfhernandezsolis/"
               />
-              <Contact title="GitHub" text="Luis Hernandez" src="/github.png" />
+              <Contact
+                title="GitHub"
+                text="Luis Hernandez"
+                src="/github.png"
+                href="https://github.com/lfhernandez03"
+              />
             </div>
           </div>
         </section>
@@ -141,6 +166,12 @@ const emailJsConfig = {
         </section>
       </div>
     </section>
+    <footer class="flex justify-between items-center mt-10">
+      <p class="text-center">
+        &copy; 2025 Luis Hernandez.
+      </p>
+      <a href="#inicio">Volver al Inicio</a>
+    </footer>
     <style>
       @keyframes fadeInOut {
         0%,
@@ -164,6 +195,16 @@ const emailJsConfig = {
         align-items: center;
         text-align: center;
       }
+
+      .section-transition {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+
+      .section-transition-active {
+        opacity: 1;
+      }
     </style>
+    <script src="/src/scripts/transitions.js" type="module"></script>
   </main>
 </Layout>

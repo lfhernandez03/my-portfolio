@@ -1,12 +1,13 @@
 ---
-title: "Proyecto 1"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+title: "Simulador de Busqueda Heuristica"
+description: "Sistema de simulación basado en inteligencia artificial para
+ resolver problemas de búsqueda en un entorno interactivo."
 tags: ["Python", "PyGame"]
-demolink: "https://demo-link.com"
-codelink: "https://code-link.com"
-image: "/React.png"
+codelink: "https://github.com/lfhernandez03/ProyectoIA.git"
+image: "/Python.png"
 ---
 
-## Descripción detallada del Proyecto 1
-
-Este es el contenido detallado del Proyecto 1. Puedes agregar más información aquí.
+    Sistema de simulación basado en inteligencia artificial para
+    resolver problemas de búsqueda en un entorno interactivo. El proyecto incluyó el desarrollo de
+    agentes inteligentes, uno utilizando Búsqueda Limitada por Profundidad y otro empleando
+    algoritmos de Amplitud y A*, integrando elementos de probabilidad y costos dinámicos.

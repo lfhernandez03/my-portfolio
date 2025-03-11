@@ -1,12 +1,11 @@
 ---
-title: "Proyecto 1"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+title: "MoveTogether"
+description: "Es una aplicación web que funciona como red social para deportistas. Además, cuenta con un
+ sistema de rutas generadas en el mapa. En este proyecto tuve participación en el diseño y
+ desarrollo front-end."
 tags: ["HTML", "CSS", "JavaScript"]
-demolink: "https://demo-link.com"
-codelink: "https://code-link.com"
-image: "/Astro.png"
+codelink: "https://github.com/lfhernandez03/MoveTogether.git"
+image: "/Movetogether.jpg"
 ---
-
-## Descripción detallada del Proyecto 1
 
 Este es el contenido detallado del Proyecto 1. Puedes agregar más información aquí.
