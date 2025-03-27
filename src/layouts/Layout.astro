@@ -8,9 +8,13 @@ import "../styles/global.css";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro Basics</title>
     <link rel="stylesheet" href="https://use.typekit.net/xxb4sbg.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <meta name="generator" content={Astro.generator} />
+    <title>Portfolio</title>
   </head>
   <body>
     <div class="relative w-full h-full min-h-screen">
@@ -25,7 +29,7 @@ import "../styles/global.css";
     background: var(--background-color);
     scroll-behavior: smooth;
   }
-  
+
   body {
     display: flex;
     flex-direction: column;
@@ -54,10 +58,14 @@ import "../styles/global.css";
       rgba(120, 119, 198, 0.3),
       rgba(255, 255, 255, 0)
     );
-    color:black;
+    color: black;
 
-    --tech-bg-color: rgba(0, 0, 0, 0.15); /* Fondo negro translúcido para el tema claro */
-
+    --tech-bg-color: rgba(
+      0,
+      0,
+      0,
+      0.15
+    ); /* Fondo negro translúcido para el tema claro */
   }
   html[data-theme="dark"] {
     --background-color: #1a1a1a;
@@ -67,7 +75,12 @@ import "../styles/global.css";
       rgba(0, 0, 0, 0)
     );
     color: #ffffff;
-    
-    --tech-bg-color: rgba(255, 255, 255, 0.15); /* Fondo blanco translúcido para el tema oscuro */
+
+    --tech-bg-color: rgba(
+      255,
+      255,
+      255,
+      0.15
+    ); /* Fondo blanco translúcido para el tema oscuro */
   }
 </style>

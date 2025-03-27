@@ -31,15 +31,16 @@ const emailJsConfig = {
         <span class="animate-fade" style="animation-delay: 4.0s;">!</span>
       </h1>
       <h1 class="flex flex-col text-3xl font-bold">
-        <span> Soy Luis Hernandez </span>
+        <span> Soy Luis Hernández </span>
         <span class="subhead">Desarrollador Web</span>
       </h1>
       <h2 class="flex flex-col items-center mt-8">
         <span class="text text-[14px] justify-center sm:w-96">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          ¡Bienvenido a mi portfolio! 👨‍💻 Soy estudiante de Ingeniería de
+          Sistemas en la Universidad del Valle (8vo semestre) y me encanta
+          construir cosas en la web. Desde interfaces atractivas hasta
+          soluciones backend eficientes, disfruto cada parte del proceso de
+          desarrollo.
         </span>
         <span class="flex space-x-4 items-center mt-5">
           <p>luishsg1@gmail.com</p>
@@ -49,21 +50,33 @@ const emailJsConfig = {
           >
             <img
               class="w-12 h-12"
-              src="/linkedin.png"
+              src="images/linkedin.png"
               alt="imagen con link hacia perfil de linkedin"
             />
           </a>
           <a href="https://github.com/lfhernandez03"
             ><img
               class="w-12 h-12"
-              src="/github.png"
+              src="images/github.png"
               alt="imagen con link hacia perfil de github"
             /></a
           >
         </span>
+        <div class="my-5">
+          <span class="flex items-center space-x-10">
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="flex flex-col items-center">
+              <a href="\CV_Luis_Hernandez.pdf" target="_blank" class="text-sm"
+                >Ver CV
+              </a>
+              <span class="border-2 w-full rounded-full"></span>
+            </div>
+            <i class="fa-solid fa-arrow-left"></i>
+          </span>
+        </div>
       </h2>
     </section>
-    <section class="section-transition">
+    <section class="section-transition mb-10 pb-10">
       <h2 class="text-3xl font-bold">
         <span>Tecnologías</span>
         <div class="w-64 border-2 mt-1"></div>
@@ -73,34 +86,38 @@ const emailJsConfig = {
         <div class="flex flex-col items-center">
           <span class="text-2xl font-bold mb-4">Lenguajes</span>
           <div class="grid grid-cols-2 gap-4 items-center justify-center">
-            <Tech Src="/html.png" Alt="HTML" Name="HTML5" />
-            <Tech Src="/css.png" Alt="CSS" Name="CSS3" />
-            <Tech Src="/js.png" Alt="JavaScript" Name="JavaScript" />
-            <Tech Src="/Python.png" Alt="Python" Name="Python" />
+            <Tech Src="images/html.png" Alt="HTML" Name="HTML5" />
+            <Tech Src="images/css.png" Alt="CSS" Name="CSS3" />
+            <Tech Src="images/js.png" Alt="JavaScript" Name="JavaScript" />
+            <Tech Src="images/Python.png" Alt="Python" Name="Python" />
           </div>
         </div>
         <!-- Frameworks y Librerías -->
         <div class="flex flex-col items-center">
           <span class="text-2xl font-bold mb-4">Frameworks y Librerías</span>
           <div class="grid grid-cols-2 gap-4">
-            <Tech Src="/React.png" Alt="React" Name="React" />
-            <Tech Src="/Astro.png" Alt="Astro" Name="Astro" />
-            <Tech Src="/Node.js.png" Alt="NodeJS" Name="NodeJS" />
-            <Tech Src="/TailwindCSS.png" Alt="TailwindCSS" Name="TailwindCSS" />
+            <Tech Src="images/React.png" Alt="React" Name="React" />
+            <Tech Src="images/Astro.png" Alt="Astro" Name="Astro" />
+            <Tech Src="images/Node.js.png" Alt="NodeJS" Name="NodeJS" />
+            <Tech
+              Src="images/TailwindCSS.png"
+              Alt="TailwindCSS"
+              Name="TailwindCSS"
+            />
           </div>
         </div>
         <!-- Herramientas -->
         <div class="flex flex-col items-center md:col-span-2">
           <span class="text-2xl font-bold mb-4">Herramientas</span>
           <div class="grid grid-cols-2 gap-4">
-            <Tech Src="/git.png" Alt="Git" Name="Git" />
-            <Tech Src="/figma.png" Alt="Figma" Name="Figma" />
+            <Tech Src="images/git.png" Alt="Git" Name="Git" />
+            <Tech Src="images/figma.png" Alt="Figma" Name="Figma" />
           </div>
         </div>
       </div>
     </section>
-    <section class="section-transition">
-      <h2 class="text-3xl font-bold pt-20">
+    <section class="section-transition mb-10 pb-10">
+      <h2 class="text-3xl font-bold">
         <span>Proyectos</span>
         <div class="w-64 border-2 mt-1"></div>
       </h2>
@@ -108,24 +125,32 @@ const emailJsConfig = {
         <Projects />
       </div>
     </section>
-    <section class="section-transition">
+    <section class="section-transition mb-10 pb-10">
       <h2 class="text-3xl font-bold pt-10">
-        <span>Sobre Mi</span>
+        <span>Sobre Mí</span>
         <div class="w-64 border-2 mt-1"></div>
       </h2>
-      <p class="text text-[14px] text-center mt-10 sm:w-96 mx-auto">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-        <br />
-        <br />
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
+      <section class="md:flex md:justify-between text text-[14px] sm:w-96 mx-auto mt-10 md:space-x-6 space-y-6">
+        <article>
+          <p>
+            💡 Trabajo con JavaScript y Python, usando ReactJS, Astro y
+            TailwindCSS para el frontend, y Node.js para el backend. También
+            manejo bases de datos como PostgreSQL y MongoDB. Me gusta mantener
+            mi código limpio y bien estructurado, siempre siguiendo buenas
+            prácticas.
+          </p>
+        </article>
+        <article>
+          <p>
+            📌 Además, utilizo herramientas como Git, GitHub, Jira y Azure
+            DevOps para la gestión de proyectos y versionado. Y cuando se trata
+            de diseño, me apoyo en Figma para crear prototipos funcionales y
+            atractivos.
+          </p>
+        </article>
+      </section>
     </section>
-    <section id="contact" class="section-transition">
+    <section id="contact" class="section-transition mb-10 pb-10">
       <h2 class="text-3xl font-bold pt-10">
         <span>Contacto</span>
         <div class="w-64 border-2 mt-1"></div>
@@ -138,21 +163,21 @@ const emailJsConfig = {
           <div class="flex pt-10 w-full justify-center">
             <div class="flex flex-col space-y-4">
               <Contact
-                title="Correo Electronico"
+                title="Correo Electrónico"
                 text="luishsg1@gmail.com"
-                src="/gmail.png"
+                src="images/gmail.png"
                 href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBmlkCnkFgLpHXqpLSFBWDCLJzlmdgzMbZLFtVqxhzMDJCdDwZnDtQPJHmGstqJFxbZJJvX"
               />
               <Contact
                 title="LinkedIn"
-                text="Luis Hernandez"
-                src="/linkedin.png"
+                text="Luis Hernández"
+                src="images/linkedin.png"
                 href="https://www.linkedin.com/in/lfhernandezsolis/"
               />
               <Contact
                 title="GitHub"
-                text="Luis Hernandez"
-                src="/github.png"
+                text="Luis Hernández"
+                src="images/github.png"
                 href="https://github.com/lfhernandez03"
               />
             </div>
@@ -167,70 +192,70 @@ const emailJsConfig = {
       </div>
     </section>
     <footer class="flex justify-between items-center mt-10">
-      <p class="text-center">&copy; 2025 Luis Hernandez.</p>
+      <p class="text-center">&copy; 2025 Luis Hernández.</p>
       <a href="#inicio">Volver al Inicio</a>
     </footer>
-    <style>
-      @keyframes fadeInOut {
-        0%,
-        100% {
-          opacity: 1;
-        }
-        50% {
-          opacity: 0;
-        }
-      }
-
-      .animate-fade {
-        animation: fadeInOut 10s infinite;
-      }
-
-      .first-sec {
-        height: 100vh; /* Ocupa todo el viewport */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      }
-
-      .section-transition {
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out;
-      }
-
-      .section-transition-active {
+  </main>
+  <style>
+    @keyframes fadeInOut {
+      0%,
+      100% {
         opacity: 1;
       }
-    </style>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const sections = document.querySelectorAll(".section-transition");
-        console.log("Sections to observe:", sections);
+      50% {
+        opacity: 0;
+      }
+    }
 
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              console.log("Entry:", entry);
-              if (entry.isIntersecting) {
-                console.log("Intersecting:", entry.target);
-                entry.target.classList.add("section-transition-active");
-              } else {
-                console.log("Not intersecting:", entry.target);
-                entry.target.classList.remove("section-transition-active");
-              }
-            });
-          },
-          {
-            threshold: 0.3, // Se activa cuando el 30% de la sección es visible
-          }
-        );
+    .animate-fade {
+      animation: fadeInOut 10s infinite;
+    }
 
-        sections.forEach((section) => {
-          console.log("Observing section:", section);
-          observer.observe(section);
-        });
+    .first-sec {
+      height: 100vh; /* Ocupa todo el viewport */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .section-transition {
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .section-transition-active {
+      opacity: 1;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const sections = document.querySelectorAll(".section-transition");
+      console.log("Sections to observe:", sections);
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            console.log("Entry:", entry);
+            if (entry.isIntersecting) {
+              console.log("Intersecting:", entry.target);
+              entry.target.classList.add("section-transition-active");
+            } else {
+              console.log("Not intersecting:", entry.target);
+              entry.target.classList.remove("section-transition-active");
+            }
+          });
+        },
+        {
+          threshold: 0.3, // Se activa cuando el 30% de la sección es visible
+        }
+      );
+
+      sections.forEach((section) => {
+        console.log("Observing section:", section);
+        observer.observe(section);
       });
-    </script>
-  </main>
+    });
+  </script>
 </Layout>

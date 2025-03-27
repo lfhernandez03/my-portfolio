@@ -5,7 +5,7 @@ description: "Es una aplicación web que funciona como red social para deportist
  desarrollo front-end."
 tags: ["HTML", "CSS", "JavaScript"]
 codelink: "https://github.com/lfhernandez03/MoveTogether.git"
-image: "/Movetogether.jpg"
+image: "images/Movetogether.jpg"
 ---
 
 Este es el contenido detallado del Proyecto 1. Puedes agregar más información aquí.

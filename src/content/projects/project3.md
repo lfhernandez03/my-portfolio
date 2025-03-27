@@ -4,7 +4,7 @@ description: "Implementamos el juego Arimaa donde un jugador humano compite cont
  Artificial (IA) basada en el algoritmo Minimax con poda alfa-beta para optimizar las decisiones."
 tags: ["Python", "PyGame"]
 codelink: "https://github.com/lfhernandez03/ProyectoIA2.git"
-image: "/Python.png"
+image: "images/Python.png"
 ---
 
 Implementamos el juego Arimaa donde un jugador humano compite contra una Inteligencia

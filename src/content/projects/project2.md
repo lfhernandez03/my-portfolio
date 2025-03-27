@@ -4,7 +4,7 @@ description: "Sistema de simulación basado en inteligencia artificial para
  resolver problemas de búsqueda en un entorno interactivo."
 tags: ["Python", "PyGame"]
 codelink: "https://github.com/lfhernandez03/ProyectoIA.git"
-image: "/Python.png"
+image: "images/Python.png"
 ---
 
     Sistema de simulación basado en inteligencia artificial para
