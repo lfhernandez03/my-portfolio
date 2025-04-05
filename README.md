@@ -1,67 +1,96 @@
-🌟 Portafolio Personal - Luis Fernando Hernández Solís
+# 🌟 Portafolio Personal — Luis Fernando Hernández Solís
 
-Este es mi portafolio personal desarrollado con Astro.js, donde muestro mis proyectos, habilidades y experiencia como desarrollador frontend. He diseñado esta web con un enfoque artístico y creativo, reflejando mi estilo personal y profesional.
+## 📌 Introducción
 
-✨ Características
+Este es mi portafolio personal, desarrollado con **Astro.js**, donde presento mi trabajo, habilidades y experiencia como desarrollador frontend. Combina un diseño artístico con funcionalidades modernas.
 
-⚡ Desarrollado con Astro
+## ✨ Características Principales
 
-🎨 Diseño único y creativo
+### 🎨 Diseño
 
-🌙 Modo claro y oscuro
+- Interfaz minimalista y creativa.
+- Modo claro/oscuro con persistencia local.
+- Tipografía y paleta de colores personalizadas.
 
-📱 Diseño responsive
+## 🛠️ Stack Tecnológico
 
-⚙️ Animaciones y efectos sutiles con CSS y JavaScript
+### Core
 
-📁 Secciones: Sobre mí, Tecnologías, Proyectos, Contacto
+- **Astro.js** 
+- **TypeScript** 
+- **Tailwind CSS** 
 
-🚀 Tecnologías utilizadas
+## 🚀 Instalación Local
 
-Astro.js
+### Requisitos previos:
 
-HTML5 / CSS3 / JavaScript
+- Node.js v18+
+- npm v9+
+- Git
 
-Tailwind CSS
+### Pasos:
 
-🧑‍💻 Instalación local
+1. **Clonar el repositorio:**
+    ```bash
+    git clone https://github.com/lfhernandez03/my-portfolio.git
+    ```
 
-Sigue estos pasos para ejecutar el proyecto en tu entorno local:
+2. **Instalar dependencias:**
+    ```bash
+    npm install
+    ```
 
-# 1. Clona este repositorio
-git clone https://github.com/lfhernandez03/my-portfolio.git
+3. **Iniciar entorno de desarrollo:**
+    ```bash
+    npm run dev
+    ```
 
-# 2. Entra en el directorio
-cd my-portfolio
+4. **Generar build para producción:**
+    ```bash
+    npm run build
+    ```
 
-# 3. Instala las dependencias
-npm install
+5. **Previsualizar build local:**
+    ```bash
+    npm run preview
+    ```
 
-# 4. Inicia el servidor de desarrollo
-npm run dev
+📍 El sitio estará disponible en [http://localhost:4321](http://localhost:4321) por defecto.
 
-El sitio estará disponible en http://localhost:4321 (por defecto).
+## 🏗️ Estructura del Proyecto
 
-🌐 Despliegue
+```plaintext
+my-portfolio/
+├── public/            # Assets estáticos
+├── src/
+│   ├── components/    # Componentes reutilizables
+│   ├── content/       # Markdowns de los proyectos
+│   ├── layouts/       # Layouts principales
+│   ├── pages/         # Sistema de rutas
+│   └── styles/        # CSS global
+├── astro.config.mjs   # Configuración de Astro
+```
 
-Este portafolio está desplegado en Vercel:🔗 https://luferher-portfolio.vercel.app/
+## 🌐 Despliegue
 
-⚒️ Personalización
+Este portafolio está desplegado en Vercel:
 
-Puedes personalizar el contenido editando los archivos en la carpeta src/:
+🔗 [luferher-portfolio.vercel.app](https://luferher-portfolio.vercel.app/)
 
-src/pages: para las rutas y secciones principales.
+## 📄 Licencia
 
-src/components: para componentes reutilizables como tarjetas, encabezados, pie de página, etc.
+Eres libre de usar, modificar y compartir este proyecto. Si lo usas como inspiración, ¡una estrella en el repositorio sería genial! ⭐
 
-src/styles: si utilizas estilos personalizados.
+## 📬 Contacto
 
-📄 Licencia
+¿Quieres trabajar conmigo o tienes alguna consulta? Aquí tienes mis datos de contacto:
 
-Eres libre de usarlo, modificarlo y compartirlo. Si lo usas como inspiración, ¡una estrella es bienvenida! ⭐
+| Medio   | Enlace/Info |
+|---------|-------------|
+| 📧 Email | luishsg1@gmail.com |
+| 🌐 Website | [luferher-portfolio.vercel.app](https://luferher-portfolio.vercel.app/) |
+| 💼 LinkedIn | [linkedin.com/in/lfhernandezsolis](https://www.linkedin.com/in/lfhernandezsolis/) |
 
-📬 Contacto
+---
 
-¿Quieres trabajar conmigo o tienes alguna consulta?📧 luishsg1@gmail.com🌐 https://luferher-portfolio.vercel.app/
-
-Desarrollado con 💖 por Luis Fernando Hernández Solís
+Desarrollado con 💖 por **Luis Fernando Hernández Solís**
