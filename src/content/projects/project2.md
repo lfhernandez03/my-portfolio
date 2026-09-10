@@ -1,13 +1,13 @@
 ---
-title: "Simulador de Busqueda Heuristica"
-description: "Sistema de simulación basado en inteligencia artificial para
- resolver problemas de búsqueda en un entorno interactivo."
-tags: ["Python", "PyGame"]
-codelink: "https://github.com/lfhernandez03/ProyectoIA.git"
-image: "images/Python.png"
+title: "StockGuard"
+description: "Sistema de reserva de stock enfocado en resolver un problema real de concurrencia: evitar overselling cuando múltiples usuarios compiten por el mismo inventario limitado. Incluye manejo de concurrencia con backoff exponencial y jitter, y una suite de pruebas que detectó y corrigió un bug de tipo thundering herd."
+tags: ["Java", "Spring Boot", "PostgreSQL", "Testcontainers"]
+codelink: "."
+image: "images/spring-boot.png"
 ---
 
-    Sistema de simulación basado en inteligencia artificial para
-    resolver problemas de búsqueda en un entorno interactivo. El proyecto incluyó el desarrollo de
-    agentes inteligentes, uno utilizando Búsqueda Limitada por Profundidad y otro empleando
-    algoritmos de Amplitud y A*, integrando elementos de probabilidad y costos dinámicos.
+Sistema de reserva de stock enfocado en resolver un problema real de
+concurrencia: evitar overselling cuando múltiples usuarios compiten por el mismo
+inventario limitado. Incluye manejo de concurrencia con backoff exponencial y
+jitter, y una suite de pruebas que detectó y corrigió un bug de tipo thundering
+herd.

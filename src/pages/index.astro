@@ -14,7 +14,7 @@ const emailJsConfig = {
 ---
 
 <Layout>
-  <main class="max-w-screen-xl mx-auto p-5 px-8 sm:px-12 md:px-20 lg:px-28 ">
+  <main class="max-w-screen-xl mx-auto p-5 px-8 sm:px-12 md:px-20 lg:px-28">
     <Header />
     <section
       id="inicio"
@@ -36,14 +36,14 @@ const emailJsConfig = {
       </h1>
       <h2 class="flex flex-col items-center mt-8">
         <span class="text text-[14px] justify-center sm:w-96">
-          ¡Bienvenido a mi portfolio! 👨‍💻 Soy estudiante de Ingeniería de
-          Sistemas en la Universidad del Valle (9no semestre) y me apasiona
-          construir cosas en la web. Desde interfaces atractivas hasta
-          soluciones backend eficientes, disfruto cada parte del proceso de
-          desarrollo.
+          ¡Bienvenido a mi portfolio! 👨‍💻 Soy Ingeniero de Sistemas (Universidad
+          del Valle) y Desarrollador Full Stack. Trabajo cómodo tanto en
+          frontend (React, Next.js, TypeScript) como en backend (Java, Spring
+          Boot), y disfruto cada parte del proceso de construir software, desde
+          la interfaz hasta la infraestructura.
         </span>
         <span class="flex space-x-4 items-center mt-5">
-          <p>luishsg1@gmail.com</p>
+          <p>lfhernandez.cv@gmail.com</p>
           <a
             href="https://www.linkedin.com/in/lfhernandezsolis/"
             target="_blank"
@@ -66,7 +66,7 @@ const emailJsConfig = {
           <span class="flex items-center space-x-10">
             <i class="fa-solid fa-arrow-right"></i>
             <div class="flex flex-col items-center">
-              <a href="\CV_LFHS.pdf" target="_blank" class="text-sm"
+              <a href="\CV_LFHS_EN.pdf" target="_blank" class="text-sm"
                 >Ver CV
               </a>
               <span class="border-2 w-full rounded-full"></span>
@@ -89,8 +89,13 @@ const emailJsConfig = {
             <Tech Src="images/html.png" Alt="HTML" Name="HTML5" />
             <Tech Src="images/css.png" Alt="CSS" Name="CSS3" />
             <Tech Src="images/js.png" Alt="JavaScript" Name="JavaScript" />
-            <Tech Src="images/TypeScript.png" Alt="TypeScript" Name="TypeScript" />
+            <Tech
+              Src="images/TypeScript.png"
+              Alt="TypeScript"
+              Name="TypeScript"
+            />
             <Tech Src="images/Python.png" Alt="Python" Name="Python" />
+            <Tech Src="images/java.png" Alt="Java" Name="Java" />
           </div>
         </div>
         <!-- Frameworks y Librerías -->
@@ -105,6 +110,8 @@ const emailJsConfig = {
               Alt="TailwindCSS"
               Name="TailwindCSS"
             />
+            <Tech Src="images/spring-boot.png" Alt="Spring" Name="Spring" />
+            <Tech Src="images/nextjs.png" Alt="Next.js" Name="Next.js" />
           </div>
         </div>
         <!-- Herramientas -->
@@ -114,7 +121,12 @@ const emailJsConfig = {
             <Tech Src="images/git.png" Alt="Git" Name="Git" />
             <Tech Src="images/figma.png" Alt="Figma" Name="Figma" />
             <Tech Src="images/Jira.png" Alt="Jira" Name="Jira" />
-            <Tech Src="images/AzureDevops.png" Alt="Azure DevOps" Name="Azure DevOps" />
+            <Tech
+              Src="images/AzureDevops.png"
+              Alt="Azure DevOps"
+              Name="Azure DevOps"
+            />
+            <Tech Src="images/docker.png" Alt="Docker" Name="Docker" />
           </div>
         </div>
       </div>
@@ -133,25 +145,39 @@ const emailJsConfig = {
         <span>Sobre Mí</span>
         <div class="w-64 border-2 mt-1"></div>
       </h2>
-      <section class="md:flex md:justify-between text text-[14px] sm:w-96 mx-auto mt-10 md:space-x-6 space-y-6">
-        <article>
+      <div
+        class="text text-[15px] leading-relaxed max-w-3xl mx-auto mt-10 grid gap-10 md:grid-cols-2"
+      >
+        <article class="space-y-4">
+          <h3 class="text-lg font-bold">Mi enfoque</h3>
           <p>
-            💡 Trabajo con JavaScript y TypeScript, usando ReactJS, Astro y
-            TailwindCSS para el frontend, junto a Node.js y Express para el backend. También
-            manejo bases de datos como PostgreSQL y MongoDB. Me gusta mantener
-            mi código limpio y bien estructurado, siempre siguiendo buenas
-            prácticas.
+            Lo que más disfruto de desarrollar software es el momento en que una
+            idea abstracta se convierte en algo que alguien más puede usar. Esa
+            curiosidad me llevó a explorar terrenos poco convencionales para un
+            desarrollador full stack: mi trabajo de grado,
+            <span class="font-semibold">MOVIQ</span>, combina ontologías,
+            GraphRAG y modelos de lenguaje para construir un sistema de
+            recomendación de películas que entiende el contexto del usuario.
+          </p>
+          <p>
+            Soy detallista, me gusta hacer las cosas bien hechas y no dejo de
+            aprender.
           </p>
         </article>
-        <article>
+        <article class="space-y-4">
+          <h3 class="text-lg font-bold">Fuera del código</h3>
           <p>
-            📌 Además, utilizo herramientas como Git, GitHub, Jira y Azure
-            DevOps para la gestión de proyectos y versionado. Y cuando se trata
-            de diseño, me apoyo en Figma para crear prototipos funcionales y
-            atractivos.
+            Me muevo con soltura en español e inglés, y ahora sumo el alemán a
+            la lista. Aprender un idioma nuevo me recuerda lo que se siente ser
+            principiante, algo que valoro también al programar.
+          </p>
+          <p>
+            El resto de mi tiempo lo reparto entre el deporte, el cine y la
+            música: tres formas distintas de desconectar y volver con ideas
+            frescas.
           </p>
         </article>
-      </section>
+      </div>
     </section>
     <section id="contact" class="section-transition mb-10 pb-10">
       <h2 class="text-3xl font-bold pt-10">
@@ -167,7 +193,7 @@ const emailJsConfig = {
             <div class="flex flex-col space-y-4">
               <Contact
                 title="Correo Electrónico"
-                text="luishsg1@gmail.com"
+                text="lfhernandez.cv@gmail.com"
                 src="images/gmail.png"
                 href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBmlkCnkFgLpHXqpLSFBWDCLJzlmdgzMbZLFtVqxhzMDJCdDwZnDtQPJHmGstqJFxbZJJvX"
               />
@@ -195,7 +221,7 @@ const emailJsConfig = {
       </div>
     </section>
     <footer class="flex justify-between items-center mt-10">
-      <p class="text-center">&copy; 2025 Luis Hernández.</p>
+      <p class="text-center">&copy; 2026 Luis Hernández.</p>
       <a href="#inicio">Volver al Inicio</a>
     </footer>
   </main>
@@ -252,7 +278,7 @@ const emailJsConfig = {
         },
         {
           threshold: 0.3, // Se activa cuando el 30% de la sección es visible
-        }
+        },
       );
 
       sections.forEach((section) => {
